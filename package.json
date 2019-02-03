@@ -2,7 +2,7 @@
   "name": "pet-adoption",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/App.js",
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
@@ -20,14 +20,18 @@
   },
   "homepage": "https://github.com/maryrocha79/Pet-Adoption#readme",
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.13.0",
     "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "parcel-bundler": "^1.11.0",
     "prettier": "^1.16.3"
   },
   "dependencies": {
+    "petfinder-client": "0.0.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   }
