@@ -7,15 +7,13 @@ const petfinder = pf({
   secret: process.env.API_SECRET
 });
 class Results extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      pets: []
-    };
-  }
+  state = {
+    pets: []
+  };
+
   componentDidMount() {
     petfinder.pet
-      .find({ output: "full", location: "San Francisco, CA" })
+      .find({ output: "full", location: "Berkeley, CA" })
       .then(data => {
         let pets;
         if (data.petfinder.pets && data.petfinder.pets.pet) {
